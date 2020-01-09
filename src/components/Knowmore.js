@@ -145,8 +145,8 @@ class Knowmore extends React.Component {
               </div>
              
              
-                <div className="card-columns" style={{display: 'flex', justifyContent: 'space-around'}}>
-                <div style={{float: "left"}}>
+                <div className="card-columns">
+                <div >
                     <div className="card bg-primary">
                         <div className="card-body text-center">
                         <h2 className="card-text">Abilities</h2>
@@ -161,12 +161,14 @@ class Knowmore extends React.Component {
                     </div>
                 </div>
 
-                <div style={{display: "flex", flexDirection: "column"}}>
-                    <img style={{width:"290px", height:"325px"}} id="pokemonImage" alt=""/>
-                    <h3 id="pokemonName" > </h3>
+                <div className="centerPokemon">
+                    <img id="pokemonImage" alt=""/><br/>
+                    
                 </div>
 
-                <div style={{float: "right"}}>
+                <h3 id="pokemonName" > </h3>
+
+                <div >
                     <div className="card bg-success">
                         <div className="card-body text-center">
                         <h2 className="card-text">Stats</h2>
