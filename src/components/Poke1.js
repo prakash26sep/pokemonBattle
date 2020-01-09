@@ -123,14 +123,14 @@ class Poke1 extends React.Component {
         return (
 
              
-                <div style={{display: 'flex', justifyContent: 'space-around', flexDirection: 'row'}}>
+                <div style={{display: 'flex', justifyContent: 'space-around', flexDirection: 'row', marginBottom: "20px"}}>
 
                     <Card className="" style={{ width: '90%' }}>
 
                             {this.state.pokemonNotFound}
                     
                             {this.props.trainer}
-                            <Card.Img variant="top" id="pokeLoading1" src="images/loading.gif" />
+                            <Card.Img className="pokeImg1" variant="top" id="pokeLoading1" src="images/loading.gif" />
                             <Card.Body>
                                 <Card.Title id= "cardTitle1" style={{fontFamily: "monaco", color: "purple", fontSize: "34px"}}>{pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)}</Card.Title>
                                 <Card.Text className="card-textt" id="cardText1"><ul style={{listStyleType:"none"}}>{pokeData.abilities.map( abilityy=>
@@ -142,7 +142,7 @@ class Poke1 extends React.Component {
                                 <Button id="cardButton1" variant="warning" href={`https://www.google.com/search?q=${pokeData.name}`} target="_blank">More</Button>
                         </Card.Body>
                     </Card>
-
+                    
                 </div>
             
 

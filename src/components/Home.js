@@ -20,7 +20,7 @@ class Home extends React.Component {
         return (
             <div>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    <img style={{width: "50%", height: "50%", marginTop: "4%"}} className="rounded" src="images/pokemons.jpg" alt=" " />
+                    <img className="pokemonsRunning rounded"  src="images/pokemons.jpg" alt=" " />
                 </div>
                 <div style={{textAlign: "center"}}><h3>Welcome to Pokemon App, here you can Know about your Favourite Pokemon<br/> also, You can have Battle with friends and See who Wins!</h3></div>
             </div>

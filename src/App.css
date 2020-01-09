@@ -148,6 +148,12 @@ body{
   margin-bottom: 50px;
 }
 
+.pokemonsRunning{
+  width: 50%;
+  height: 50%;
+  margin-top: 4%;
+}
+
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -167,7 +173,7 @@ body{
   
 
   body{
-    background-color: red;
+    background-color: aqua;
   }
   h1{
     font-size:14px;
@@ -192,6 +198,11 @@ body{
     background-color: aquamarine;
   }
 
-  
+  .pokemonsRunning{
+    width: 80%;
+    height: 350px;
+    margin-top: 4%;
+  }
+
 
 }
