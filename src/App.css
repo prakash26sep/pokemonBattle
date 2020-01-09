@@ -163,6 +163,13 @@ body{
    height: 90%
 }
 
+.centerPokemon{
+  display: block;
+  margin-left: 13%;
+  margin-right: 10%;
+  width: 30%;
+}
+
 
 
 

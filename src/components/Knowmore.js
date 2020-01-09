@@ -29,7 +29,7 @@ class Knowmore extends React.Component {
     }
 
     callingPokeApi(){
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${this.state.pokemonSearch}/`)
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${this.state.pokemonSearch.toLowerCase()}/`)
           .then(response => {
               //totalResults= response.data.totalResult;
               this.setState({
@@ -163,10 +163,10 @@ class Knowmore extends React.Component {
 
                 <div className="centerPokemon">
                     <img id="pokemonImage" alt=""/><br/>
-                    
+                    <h3 id="pokemonName" > </h3>
                 </div>
 
-                <h3 id="pokemonName" > </h3>
+                
 
                 <div >
                     <div className="card bg-success">
