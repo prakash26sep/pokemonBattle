@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 // //Importing Pokemon Card 1 and Card 2
@@ -24,6 +25,7 @@ class App extends React.Component {
 
       <div>
         <Header/>
+        <Footer/>
       </div>
       )
   }
