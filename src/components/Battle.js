@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Header from './Header';
 import '../../src/App.css';
+import Footer from './Footer';
 
 //Importing Pokemon Card 1 and Card 2
 import Poke1 from './Poke1';
@@ -174,23 +175,17 @@ class Battle extends React.Component {
 
           <div className="battleCards">
 
-            <div>
+            <div style={{backgroundColor: "orange", border: "double"}}>
               <div className="form-group col-sm-12">
-                <input onKeyUp={this.searchingPoke1} className="form-control" type="text" name="pokemon1" id="pokemon1" placeholder="Select Pokemon 1" />
-                {/*<div id="pokemonList1" style={{backgroundColor: "red"}}>
-                  <ul style={{listStyleType: "none"}}>
-                      <li>pikachu</li>
-                      <li>pikahcu</li>
-                      <li>charizard</li>
-                  </ul>
-                </div>*/}
+                <input style={{marginTop: "4%"}} className="form-control" type="text" name="pokemon1" id="pokemon1" placeholder="Select Pokemon 1" />
+                
                 <br />
                 <button className="btn btn-primary" onClick={this.changePokemon1}>Go Pokemon 1</button>
               </div>
               <Poke1 search={this.props.pokemonSearch1.toLowerCase()} />
             </div>
 
-            <div className="startBattle" style={{ marginTop: "10%", marginBottom: "10%" }}>
+            <div className="startBattle" style={{ marginTop: "10%", marginBottom: "10%"}}>
 
               {/* eslint-disable-next-line */}
               <img className="img-fluid" id="pokeballimage" src="" style={{width: "40%", height:"50%"}} alt={""} /><br />
@@ -202,17 +197,16 @@ class Battle extends React.Component {
             </div>
 
 
-            <div>
-              <div className="form-group col-sm-12">
-                <input className="form-control" type="text" name="pokemon2" id="pokemon2" placeholder="Select Pokemon 2" />
-                <div id="pokemonList2" style={{backgroundColor: "red"}}>
-                  <ul>
-
-                  </ul>
-                </div><br />
+            <div style={{backgroundColor: "orange", border: "double", marginBottom: "4%", paddingBottom: "4%"}}>
+              <div  className="form-group col-sm-12">
+                <input style={{marginTop: "4%"}} className="form-control" type="text" name="pokemon2" id="pokemon2" placeholder="Select Pokemon 2" />
+                  
+                  <br />
                 <button className="btn btn-primary" onClick={this.changePokemon2}>Go Pokemon 2</button>
               </div>
               <Poke2 search={this.props.pokemonSearch2.toLowerCase()} />
+              <Footer/>
+              
             </div>
           </div>
         </div>

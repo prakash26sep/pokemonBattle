@@ -21,7 +21,7 @@ class Header extends React.Component {
         return (
             <Router>
                 <div className="header">
-                    <img src="images/pokemonlogo.png" style={{ width: "10%", height: "0.4%" }} alt="logo" />
+                    <img src="images/pokemonlogo.png" className="centerPokemon" style={{ width: "10%", height: "0.4%" }} alt="logo" />
                     
                     <div className="header-right">
                         <Link to="/">Home</Link>

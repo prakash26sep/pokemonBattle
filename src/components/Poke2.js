@@ -119,7 +119,7 @@ class Poke2 extends React.Component {
                             <Button id= "cardButton2" variant="warning" href={`https://www.google.com/search?q=${pokeData.name}`} target="_blank">More</Button>
                     </Card.Body>
                 </Card>
-
+                <br/><br/>
             </div>
             );
         }
