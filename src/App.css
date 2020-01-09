@@ -177,7 +177,7 @@ body{
   .header a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
   
   .header-right {
