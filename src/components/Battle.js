@@ -172,7 +172,7 @@ class Battle extends React.Component {
 
           <div className="container" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}></div>
 
-          <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'space-around', flexDirection: 'row' }}>
+          <div className="battleCards">
 
             <div>
               <div className="form-group col-sm-12">
@@ -190,12 +190,11 @@ class Battle extends React.Component {
               <Poke1 search={this.props.pokemonSearch1.toLowerCase()} />
             </div>
 
-            <div style={{ marginTop: "10%" }}>
+            <div className="startBattle" style={{ marginTop: "10%", marginBottom: "10%" }}>
 
               {/* eslint-disable-next-line */}
               <img className="img-fluid" id="pokeballimage" src="" style={{width: "40%", height:"50%"}} alt={""} /><br />
-              <button onClick={this.battle} id="battleButton" className="btn btn-dark btn-lg"><h1>Start Battle</h1></button>
-
+              <button onClick={this.battle} id="battleButton" className="btn btn-dark btn-lg"><h1>Start Battle</h1></button><br/><br/>
 
               {/*eslint-disable-next-line*/}
               <h2 id="score"> </h2>
